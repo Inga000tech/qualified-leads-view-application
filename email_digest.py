@@ -291,7 +291,12 @@ Now we need to add your email credentials so the automated script can send email
    - Value: `mark@maplanning.co.uk`
    - Click "Add secret"
 
-**✅ Done when:** You see 3 secrets listed
+    **Secret 4:**
+   - Name: `RECIPIENT_EMAIL`
+   - Value: `inger.balaj@gmail.com`
+   - Click "Add secret"
+
+**✅ Done when:** You see 4 secrets listed
 
 ---
 
