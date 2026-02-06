@@ -1,0 +1,13 @@
+{
+  "type": "service_account",
+  "project_id": "urbanplanningleadgen",
+  "private_key_id": "e6cca46f5075e48bd56e5c6a8b6f2dd88da80e73",
+  "private_key": "-----BEGIN PRIVATE KEY-----\nMIIEvQIBADANBgkqhkiG9w0BAQEFAASCBKcwggSjAgEAAoIBAQDA2AXU2w1cPReQ\ndOTWfKYIzDhJKJlX2iDO5EiM/B7XiFViZs7FclQBKAcGPIhxIsPfOrhPJM/3uweN\ns7eJFs0smZbd2U86mgmTENToZGfJ6BXhVHlnn0sxKxbY/P+NiAb6w6KzJWqtZZuu\nTRBb+1MmRK1HsRoTsuOJvB7YMGR4dMHa8IudlKFeEWKQVMNZFtskKYDGR6dwjmvw\nmaCzmfywr0tWDsZHd0tXbEWMtQySrGnJGWg8NaGIT6b7KUUDZBR7IWEcEmF5xt7H\n4nlIjE/RjS2rbq4FmJXOLO29aKHt0TqWndfjMMiapz9jJNikD8IOGWwZ/uxD3SdI\nm+HnDR9NAgMBAAECggEAAt/lfFtfOwdXxSnnlFvregOYo4c0+/aELoQAIdvglia8\nhm47uafp4SeIgpsJ5KKCSB7/CtekuE+5KISr4SGuIXKmU/xuiNQtfYakHypfUrGV\n4T6Uswr7QF/LpCSR/E6Gs3ERno6ET9KNLB9kIEmM3yvpvQEX6gBsvGD0a8AS61Rk\nOsnsrcf+agX0LuHxVMD6d8iyV/nSN1FxSAVH61gyuh6x/dOQ3YFsH5hph8pWC3bv\ne5XW9BZ4UrrVFOUXVDSbqwNEQrw97hLS+A0sqRDf0oVGWwe8JYn0ZwMSHCzyokyo\nLcoqqpSApNPBhVERhAJGJaKcy7QzbA1JoeUqP0IEqQKBgQD3ZkWRTw6k5eM88Lvd\nhEEGmexpzHOr8p3RmCQYvSHko7IDofZ5ePjePmNS+OcyQ5G5wYhF6OXPlF08kWoG\nzdAb9hSHLdpTqwqr8Dzt2/5XuxfTlviH4WbtVpeDtpBf5XygLNVIjYWtHExievOh\n7U+9mYXQ96mxqUSh18dYPqn5RQKBgQDHjDvVdO8PcRLy8B9cOdyFF51WY+SSe6Yn\nqkSAAL7fQXD9O3Mz3xSXEI19UqeHEsXMLCtW+P2PYkApoJ90YC1u/+yzUkyU2tT+\nqWavSJngv83N01y/2UPdMP2GWc/QJrISr5KW3pEKVJAC6Cs7BHWCzwC5S8f+xMY+\ngjNL8Y96aQKBgQDv5/0OK9vHjCYPsmJ7LQThoeHftqN02pCv7xkR5FY5oYO+ghDB\nOs4ateUbUMLhuyRVPZcoM/CmmvjPAzQN5QcqFjdR3uUYvYRbt1teTTcXXBZ+2Kep\nHKry/EVxNFhMpf10VgV9lb9LX2WzGgenvrjU40sgmQm1fq9PQi/NIvcxAQKBgFXL\nLDqFMPdRpVT/+mu7kN1EHuhywGZedTyejx79sxLn3v1xXwGRSxf8DOkx7Uc8wgAb\niXK2UMYh9vYu0f/GDiKoNAuROc3SHDt1d+mq7EXeEU0KL9loPy5NjuMBoECdMnio\nNf1ZqcBoRRaK3XNdYmygNW51b4JQ9e8QKZ/gNtDpAoGATgiTocaTGLzEOuGH7eSs\nmeTHE1qE4Q0sogQjwNSMpHToYVo2vVhArwSLA1Of4A/de6sWsHw7WnSDoE7yRcUW\nSNbRD4jI7BV35wpkHPxqyXH0RJLxMWMwZzmKR1XzuftXn1UxJrzaU4RI/+5Q2Amg\ns01iSRIlOVd9nqknKQhTOYI=\n-----END PRIVATE KEY-----\n",
+  "client_email": "urbanplanning-leadgen@urbanplanningleadgen.iam.gserviceaccount.com",
+  "client_id": "103524685566170831164",
+  "auth_uri": "https://accounts.google.com/o/oauth2/auth",
+  "token_uri": "https://oauth2.googleapis.com/token",
+  "auth_provider_x509_cert_url": "https://www.googleapis.com/oauth2/v1/certs",
+  "client_x509_cert_url": "https://www.googleapis.com/robot/v1/metadata/x509/urbanplanning-leadgen%40urbanplanningleadgen.iam.gserviceaccount.com",
+  "universe_domain": "googleapis.com"
+}
