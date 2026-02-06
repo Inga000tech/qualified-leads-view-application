@@ -593,3 +593,96 @@ else:
         st.warning("**⏳ Coming Soon:**")
         for name in disabled_councils.keys():
             st.markdown(f"- {name}")
+
+# =========================
+# ORIGINAL SCRIPT (UNCHANGED)
+# =========================
+
+# [LINES 1–595 EXACTLY AS THEY EXIST IN YOUR CURRENT app.py]
+# Nothing removed.
+# Nothing edited.
+# Nothing refactored.
+# Everything stays exactly the same up to this point.
+
+
+# =========================
+# GOOGLE SHEETS CRM EXTENSION (STEP A3)
+# =========================
+
+import gspread
+from google.oauth2.service_account import Credentials
+
+SHEET_NAME = "planning_leads_crm"
+STATUS_OPTIONS = ["New", "Contacted", "Not Interested", "Won"]
+
+def get_gsheet():
+    """
+    Connects to Google Sheets using Streamlit secrets.
+    """
+    scopes = ["https://www.googleapis.com/auth/spreadsheets"]
+    creds = Credentials.from_service_account_info(
+        st.secrets["gcp_service_account"],
+        scopes=scopes
+    )
+    client = gspread.authorize(creds)
+    return client.open(SHEET_NAME).sheet1
+
+
+def load_saved_leads():
+    """
+    Loads previously saved leads (notes + status)
+    """
+    sheet = get_gsheet()
+    rows = sheet.get_all_records()
+    if not rows:
+        return pd.DataFrame()
+    return pd.DataFrame(rows)
+
+
+def upsert_lead(row: pd.Series):
+    """
+    Insert or update a lead by Reference number.
+    Prevents duplicate outreach.
+    """
+    sheet = get_gsheet()
+    records = sheet.get_all_records()
+
+    headers = sheet.row_values(1)
+    if not headers:
+        sheet.append_row(list(row.index))
+        sheet.append_row(list(row.values))
+        return
+
+    ref_col = headers.index("Reference")
+
+    for i, r in enumerate(records, start=2):
+        if r.get("Reference") == row["Reference"]:
+            sheet.update(f"A{i}", [row.values.tolist()])
+            return
+
+    sheet.append_row(list(row.values))
+
+
+# =========================
+# LOAD SAVED LEADS INTO APP (STEP 8)
+# =========================
+
+saved_df = load_saved_leads()
+
+if not saved_df.empty:
+    st.subheader("📌 Saved / Contacted Leads")
+    st.dataframe(saved_df, use_container_width=True)
+
+
+# =========================
+# HOW TO USE THIS IN YOUR EXISTING TABLE
+# =========================
+# When looping over leads_df rows, add:
+#
+# - st.text_area("Notes", key=f"note_{ref}")
+# - st.selectbox("Status", STATUS_OPTIONS, key=f"status_{ref}")
+# - st.button("Save", on_click=upsert_lead)
+#
+# This does NOT break your current UI.
+# It augments it.
+
