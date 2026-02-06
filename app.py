@@ -3,6 +3,11 @@ import requests
 from datetime import datetime, timedelta
 import pandas as pd
 import time
+import gspread
+from google.oauth2.service_account import Credentials
+import json
+import datetime
+
 
 st.set_page_config(
     page_title="Lead Scouting Engine",
